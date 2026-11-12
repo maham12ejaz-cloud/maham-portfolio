@@ -1,175 +1,148 @@
-# Maham Ejaz — Personal Portfolio
+# Maham Ejaz — Portfolio
 
-A modern, responsive personal portfolio website showcasing my skills, projects, education, experience, and interests as a BS Software Engineering student.
+A modern, responsive personal portfolio website showcasing my skills, projects, education, experience, and interests as a Software Engineering student.
 
-## 🌐 Live Website
+## 🌐 Live Portfolio
 
-Coming soon...
+[Visit My Portfolio](https://maham-portfolio-six.vercel.app/)
 
 ## 👩‍💻 About Me
 
-Hi, I'm **Maham Ejaz**, a BS Software Engineering student based in Multan, Pakistan.
+Hi, I'm Maham Ejaz, a BS Software Engineering student from Multan, Pakistan.
 
-I am passionate about **software development, artificial intelligence, problem solving, and modern technologies**. I enjoy building practical projects, learning new technologies, and continuously improving my technical skills.
+I am passionate about software development, artificial intelligence, and modern technologies. I enjoy building practical projects, solving programming problems, learning new technologies, and continuously improving my technical skills.
 
-My current focus is on becoming a strong **Software Developer and AI Engineer**.
+My current focus is on becoming a strong Software Developer while developing my skills in Artificial Intelligence and Machine Learning.
 
-## ✨ Features
+## 🛠️ Tech Stack
 
-- Modern and responsive portfolio design
-- Animated hero section
-- About Me section
-- Skills & Technologies section
-- AI tools section
-- Project showcase
-- Detailed project information
-- GitHub repository links
-- Live project demo links
-- Experience section
-- Education timeline
-- Interests section
-- Contact section
-- LinkedIn and GitHub integration
-- Downloadable CV
-- Responsive mobile navigation
-- Smooth animations and scroll reveal effects
-
-## 🛠️ Technologies Used
-
-### Frontend
-
-- React.js
-- JavaScript
-- Vite
-- HTML5
-- CSS3
-
-### Development Tools
-
-- Git
-- GitHub
-- VS Code
-- Vercel
-- Lucide React
-
-## 📂 Projects
-
-### Nexora Tech
-
-A modern responsive business website built with React.js and modern web technologies.
-
-**Technologies:**
-
-- React.js
-- Vite
-- JavaScript
-- Tailwind CSS
-- Supabase
-- Vercel
-
-🔗 [Live Demo](https://nexora-tech-five.vercel.app/)
-
-🔗 [GitHub Repository](https://github.com/maham12ejaz-cloud/Nexora-Tech)
-
-### BrewMatch
-
-An AI-powered coffee recommendation web application that helps users discover coffee based on their taste preferences.
-
-**Technologies:**
-
-- React.js
-- Vite
-- JavaScript
-- Node.js
-- Express.js
-- MySQL
-- JWT
-
-🔗 [GitHub Repository](https://github.com/maham12ejaz-cloud/BrewMatch)
-
-### Online Class App
-
-A Flutter-based mobile application designed around online classes and virtual meeting experiences.
-
-**Technologies:**
-
-- Flutter
-- Dart
-- Mobile UI
-
-### Music Web Application
-
-A responsive music web application developed to practice frontend development and interactive UI design.
-
-**Technologies:**
-
-- HTML
-- CSS
-- JavaScript
-
-## 🎓 Education
-
-**BS Software Engineering**  
-NFC Institute of Engineering and Technology, Multan  
-2023 – 2027  
-CGPA: **3.83**
-
-## 💼 Experience
-
-**IT Department — Volka Food International Ltd.**  
-July 2026 – August 2026
-
-Worked with the IT team on software development, testing, debugging, implementation, and problem-solving activities.
-
-## 🧰 Skills
-
+### Programming Languages
 - Java
 - C
-- Python
+- Python (Basics)
+- JavaScript
+
+### Frontend Development
 - HTML
 - CSS
 - JavaScript
 - React.js
 - Vite
 - Tailwind CSS
+
+### Backend Development
 - Node.js
 - Express.js
 - REST APIs
 - JWT Authentication
+
+### Databases
 - MySQL
 - SQL
 - DBMS
 - Database Design
-- Object-Oriented Programming
-- Data Structures & Algorithms
-- Software Testing
-- Git & GitHub
+
+### AI & Data
 - Artificial Intelligence
 - Machine Learning
 - Data Science
 - Data Analysis
 
-## 🤖 AI Tools
+### Tools & Platforms
+- Git
+- GitHub
+- VS Code
+- Postman
+- Vercel
+- Supabase
 
+### AI Tools
 - ChatGPT
-- Gemini
 - GitHub Copilot
+- Gemini
 - Lovable
 - Bolt
 - Google Stitch
 
-## 📬 Contact
+## 🚀 Featured Projects
 
-**Maham Ejaz**
+### BrewMatch
+**AI Coffee Recommendation — Full-Stack Web Application**
 
-📍 Multan, Pakistan
+A full-stack coffee recommendation application that helps users discover coffee based on their personal taste preferences.
 
-📧 maham13ejaz@gmail.com
+**Technologies:** React.js, Vite, JavaScript, Node.js, Express.js, MySQL, JWT
 
-🔗 [LinkedIn](https://www.linkedin.com/in/maham-ejaz-52b463323/)
+🔗 [GitHub Repository](https://github.com/maham12ejaz-cloud/BrewMatch)
 
-🔗 [GitHub](https://github.com/maham12ejaz-cloud)
+### Nexora Tech
+**Business Website — Web Development Project**
 
-## 📄 License
+A modern responsive business website built with React.js and modern web technologies.
 
-This portfolio is created for personal and professional showcase purposes.
+**Technologies:** React.js, Vite, JavaScript, Tailwind CSS, Supabase, Vercel
+
+🔗 [Live Website](https://nexora-tech-five.vercel.app/)
+
+🔗 [GitHub Repository](https://github.com/maham12ejaz-cloud/Nexora-Tech)
+
+### Online Class App
+**Mobile Application — Flutter Project**
+
+A Flutter-based mobile application designed around online classes and virtual meeting experiences.
+
+**Technologies:** Flutter, Dart
+
+### Music Web Application
+**Web Development — Frontend Project**
+
+A responsive music web application created to practice frontend development and interactive UI design.
+
+**Technologies:** HTML, CSS, JavaScript
+
+### Library Management System
+**Database Management System — Academic Project**
+
+A database-based academic project developed to apply fundamental DBMS concepts, including structured data storage and retrieval.
+
+**Technologies:** DBMS, SQL, Database Design
+
+## 🎓 Education
+
+**BS Software Engineering**  
+NFC Institute of Engineering and Technology, Multan  
+2023 — 2027
+
+**CGPA:** 3.83
+
+## 💼 Experience
+
+**IT Department — Volka Food International Ltd.**  
+July 2026 — August 2026
+
+Worked with the IT team on software development, testing, debugging, implementation, and problem solving in a professional IT environment.
+
+## 🎯 Current Focus
+
+- Software Development
+- Artificial Intelligence
+- Machine Learning
+- Data Science
+- Data Analysis
+- Full-Stack Web Development
+- Database Management
+- Problem Solving
+
+## 📫 Connect With Me
+
+- **Email:** maham13ejaz@gmail.com
+- **LinkedIn:** [Maham Ejaz](https://www.linkedin.com/in/maham-ejaz-52b463323/)
+- **GitHub:** [maham12ejaz-cloud](https://github.com/maham12ejaz-cloud)
+
+## 📄 Resume
+
+[Download My CV](https://maham-portfolio-six.vercel.app/Maham-Ejaz-CV.pdf)
+
+---
+
+⭐ If you find my projects interesting, feel free to explore my repositories and connect with me.
