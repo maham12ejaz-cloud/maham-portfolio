@@ -1,0 +1,11 @@
+.timeline{position:relative;padding-left:44px;margin-top:40px}
+.line{position:absolute;left:11px;top:0;bottom:0;width:2px;background:linear-gradient(var(--lime),var(--border));transform:scaleY(0);transform-origin:top;opacity:1;transition:transform 1.6s var(--ease)}
+.line.in{transform:scaleY(1)}
+.t-item{position:relative;background:var(--midnight);border:1px solid var(--border);border-radius:20px;padding:28px;transition:opacity .8s var(--ease),transform .4s var(--ease),border-color .3s}
+.t-item.in:hover{border-color:var(--lime);transform:translateX(6px)}
+.marker{position:absolute;left:-44px;top:32px;width:24px;height:24px;border-radius:50%;background:var(--lime);border:5px solid var(--teal);transform:scale(0);transition:transform .6s var(--ease) .3s}
+.t-item.in .marker{transform:scale(1)}
+.t-item .meta{color:var(--muted)}
+.t-item h3{font-size:1.6rem;margin:4px 0}
+.company{color:var(--lime);font-weight:600;margin-bottom:14px}
+.t-item ul{margin-left:18px;color:var(--muted);display:grid;gap:8px}

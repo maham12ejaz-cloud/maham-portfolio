@@ -1,0 +1,7 @@
+.skill-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(300px,100%),1fr));gap:20px}
+.skill{position:relative;background:var(--midnight);border:1px solid var(--border);border-radius:20px;padding:28px;transition:opacity .8s var(--ease),transform .4s var(--ease),border-color .3s,box-shadow .4s}
+.skill.in:hover{transform:translateY(-6px);border-color:var(--lime);box-shadow:0 0 34px -10px rgba(184,255,61,.35)}
+.s-icon{width:46px;height:46px;display:grid;place-items:center;border-radius:12px;background:var(--teal);color:var(--lime);margin-bottom:16px;transition:transform .4s var(--ease)}
+.skill:hover .s-icon{transform:translateY(-4px) rotate(-6deg)}
+.skill h3{font-size:1.25rem;margin-bottom:14px}
+.chips{display:flex;flex-wrap:wrap;gap:8px}

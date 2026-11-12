@@ -1,0 +1,656 @@
+/* =========================================================
+   NAVBAR
+========================================================= */
+
+.nav {
+  position: fixed;
+
+  inset: 0 0 auto 0;
+
+  z-index: 100;
+
+  padding: 18px 0;
+
+  transition:
+    padding 0.4s var(--ease),
+    background 0.4s ease,
+    backdrop-filter 0.4s ease,
+    border-color 0.4s ease;
+
+  border-bottom: 1px solid transparent;
+
+  animation:
+    navIn 0.9s var(--ease) 0.35s both;
+}
+
+
+/* =========================================================
+   SCROLLED NAVBAR
+========================================================= */
+
+.nav.scrolled {
+  padding: 10px 0;
+
+  background: rgba(6, 47, 47, 0.78);
+
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+
+  border-color: var(--border);
+}
+
+
+/* =========================================================
+   NAV INNER
+========================================================= */
+
+.nav-inner {
+  display: flex;
+
+  align-items: center;
+  justify-content: space-between;
+
+  gap: 24px;
+}
+
+
+/* =========================================================
+   LOGO / NAME
+========================================================= */
+
+.logo {
+  display: flex;
+
+  flex-direction: column;
+  justify-content: center;
+
+  gap: 2px;
+
+  min-width: max-content;
+
+  color: var(--pearl);
+
+  text-decoration: none !important;
+
+  transition:
+    transform 0.3s var(--ease),
+    opacity 0.3s ease;
+}
+
+.logo:hover {
+  transform: translateY(-1px);
+
+  opacity: 0.95;
+}
+
+
+/* Main Name */
+
+.logo-name {
+  display: block;
+
+  color: var(--pearl);
+
+  font-family: var(--display);
+
+  font-size: 1.28rem;
+
+  font-weight: 800;
+
+  line-height: 1.05;
+
+  letter-spacing: -0.025em;
+}
+
+
+/* Small Professional Label */
+
+.logo-role {
+  display: block;
+
+  margin-top: 3px;
+
+  color: var(--lime);
+
+  font-size: 0.58rem;
+
+  font-weight: 700;
+
+  line-height: 1;
+
+  letter-spacing: 0.16em;
+
+  text-transform: uppercase;
+}
+
+
+/* =========================================================
+   NAVIGATION AREA
+========================================================= */
+
+.nav-links {
+  display: flex;
+
+  align-items: center;
+
+  gap: 4px;
+}
+
+
+/* =========================================================
+   NORMAL NAV LINKS
+========================================================= */
+
+.nav-links > a:not(.nav-social-icon):not(.nav-cv) {
+  position: relative;
+
+  padding: 8px 12px;
+
+  color: var(--muted);
+
+  text-decoration: none !important;
+
+  font-size: 0.86rem;
+
+  font-weight: 500;
+
+  transition:
+    color 0.3s ease,
+    transform 0.3s var(--ease);
+}
+
+.nav-links > a:not(.nav-social-icon):not(.nav-cv)::after {
+  content: '';
+
+  position: absolute;
+
+  left: 12px;
+  right: 12px;
+
+  bottom: 2px;
+
+  height: 2px;
+
+  border-radius: 999px;
+
+  background: var(--lime);
+
+  transform: scaleX(0);
+
+  transform-origin: left;
+
+  transition:
+    transform 0.35s var(--ease);
+}
+
+.nav-links > a:not(.nav-social-icon):not(.nav-cv):hover,
+.nav-links > a:not(.nav-social-icon):not(.nav-cv).active {
+  color: var(--pearl);
+}
+
+.nav-links > a:not(.nav-social-icon):not(.nav-cv):hover {
+  transform: translateY(-1px);
+}
+
+.nav-links > a:not(.nav-social-icon):not(.nav-cv):hover::after,
+.nav-links > a:not(.nav-social-icon):not(.nav-cv).active::after {
+  transform: scaleX(1);
+}
+
+
+/* =========================================================
+   SOCIAL ICONS
+========================================================= */
+
+.nav-social {
+  display: flex;
+
+  align-items: center;
+
+  gap: 6px;
+
+  margin-left: 8px;
+
+  padding-left: 10px;
+
+  border-left: 1px solid rgba(244, 241, 232, 0.12);
+}
+
+.nav-social-icon {
+  display: inline-flex;
+
+  align-items: center;
+  justify-content: center;
+
+  width: 34px;
+  height: 34px;
+
+  flex-shrink: 0;
+
+  padding: 0;
+
+  border: 1px solid transparent;
+
+  border-radius: 10px;
+
+  background: transparent;
+
+  color: var(--muted);
+
+  text-decoration: none !important;
+
+  line-height: 0;
+
+  transition:
+    color 0.3s ease,
+    background 0.3s ease,
+    border-color 0.3s ease,
+    transform 0.3s var(--ease);
+}
+
+.nav-social-icon:hover {
+  background: rgba(184, 255, 61, 0.08);
+
+  border-color: rgba(184, 255, 61, 0.22);
+
+  color: var(--lime);
+
+  transform: translateY(-2px);
+}
+
+.nav-social-icon svg {
+  flex-shrink: 0;
+}
+
+
+/* =========================================================
+   DOWNLOAD CV
+========================================================= */
+
+.nav-cv {
+  display: inline-flex;
+
+  align-items: center;
+  justify-content: center;
+
+  gap: 7px;
+
+  min-height: 36px;
+
+  margin-left: 7px;
+
+  padding: 8px 14px;
+
+  background: var(--lime);
+
+  border: 1px solid var(--lime);
+
+  border-radius: 999px;
+
+  color: var(--ink);
+
+  text-decoration: none !important;
+
+  font-size: 0.76rem;
+
+  font-weight: 800;
+
+  line-height: 1;
+
+  white-space: nowrap;
+
+  box-shadow:
+    0 6px 18px rgba(184, 255, 61, 0.10);
+
+  transition:
+    background 0.3s ease,
+    border-color 0.3s ease,
+    color 0.3s ease,
+    transform 0.3s var(--ease),
+    box-shadow 0.3s ease;
+}
+
+.nav-cv:hover {
+  background: var(--lime-hover);
+
+  border-color: var(--lime-hover);
+
+  color: var(--ink);
+
+  transform: translateY(-2px);
+
+  box-shadow:
+    0 9px 24px rgba(184, 255, 61, 0.20);
+}
+
+.nav-cv svg {
+  flex-shrink: 0;
+
+  transition:
+    transform 0.3s var(--ease);
+}
+
+.nav-cv:hover svg {
+  transform: translateY(2px);
+}
+
+
+/* =========================================================
+   MOBILE MENU BUTTON
+========================================================= */
+
+.burger {
+  display: none;
+
+  align-items: center;
+  justify-content: center;
+
+  flex-shrink: 0;
+
+  width: 44px;
+  height: 44px;
+
+  padding: 0;
+
+  background: transparent;
+
+  border: 1px solid var(--border);
+
+  border-radius: 12px;
+
+  color: var(--pearl);
+
+  cursor: pointer;
+
+  transition:
+    background 0.3s ease,
+    border-color 0.3s ease,
+    color 0.3s ease,
+    transform 0.3s var(--ease);
+}
+
+.burger:hover {
+  background: var(--teal);
+
+  border-color: var(--lime);
+
+  color: var(--lime);
+
+  transform: translateY(-2px);
+}
+
+
+/* =========================================================
+   NAVBAR ENTRANCE
+========================================================= */
+
+@keyframes navIn {
+  from {
+    opacity: 0;
+
+    transform: translateY(-20px);
+  }
+
+  to {
+    opacity: 1;
+
+    transform: translateY(0);
+  }
+}
+
+
+/* =========================================================
+   TABLET / MOBILE
+========================================================= */
+
+@media (max-width: 1100px) {
+
+  .nav-inner {
+    gap: 15px;
+  }
+
+  .nav-links {
+    gap: 2px;
+  }
+
+  .nav-links > a:not(.nav-social-icon):not(.nav-cv) {
+    padding-left: 9px;
+    padding-right: 9px;
+
+    font-size: 0.82rem;
+  }
+
+  .nav-links > a:not(.nav-social-icon):not(.nav-cv)::after {
+    left: 9px;
+    right: 9px;
+  }
+
+  .nav-social {
+    margin-left: 4px;
+    padding-left: 7px;
+  }
+
+  .nav-cv {
+    margin-left: 4px;
+  }
+}
+
+
+@media (max-width: 860px) {
+
+  .nav {
+    padding: 14px 0;
+  }
+
+  .nav.scrolled {
+    padding: 9px 0;
+  }
+
+
+  /* Mobile Menu Button */
+
+  .burger {
+    display: flex;
+  }
+
+
+  /* Mobile Navigation */
+
+  .nav-links {
+    position: fixed;
+
+    inset: 72px 16px auto 16px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: stretch;
+
+    gap: 4px;
+
+    padding: 12px;
+
+    background: var(--teal);
+
+    border: 1px solid var(--border);
+
+    border-radius: 18px;
+
+    box-shadow:
+      0 20px 50px rgba(0, 0, 0, 0.25);
+
+    opacity: 0;
+
+    transform:
+      translateY(-12px)
+      scale(0.98);
+
+    pointer-events: none;
+
+    visibility: hidden;
+
+    transition:
+      opacity 0.3s var(--ease),
+      transform 0.3s var(--ease),
+      visibility 0.3s;
+  }
+
+  .nav-links.open {
+    opacity: 1;
+
+    transform:
+      translateY(0)
+      scale(1);
+
+    pointer-events: auto;
+
+    visibility: visible;
+  }
+
+
+  /* Mobile normal links */
+
+  .nav-links > a:not(.nav-social-icon):not(.nav-cv) {
+    display: block;
+
+    width: 100%;
+
+    padding: 13px 14px;
+
+    border-radius: 10px;
+
+    font-size: 0.88rem;
+  }
+
+  .nav-links > a:not(.nav-social-icon):not(.nav-cv)::after {
+    display: none;
+  }
+
+  .nav-links > a:not(.nav-social-icon):not(.nav-cv):hover {
+    background: rgba(244, 241, 232, 0.05);
+
+    transform: none;
+  }
+
+  .nav-links > a:not(.nav-social-icon):not(.nav-cv).active {
+    background: rgba(184, 255, 61, 0.08);
+
+    color: var(--lime);
+  }
+
+
+  /* Mobile social area */
+
+  .nav-social {
+    display: flex;
+
+    justify-content: center;
+
+    gap: 8px;
+
+    margin: 8px 0 4px;
+
+    padding: 10px 0 4px;
+
+    border-top: 1px solid rgba(244, 241, 232, 0.08);
+
+    border-left: none;
+  }
+
+  .nav-social-icon {
+    width: 38px;
+    height: 38px;
+
+    border-color: rgba(244, 241, 232, 0.08);
+
+    background: rgba(244, 241, 232, 0.025);
+  }
+
+
+  /* Mobile CV */
+
+  .nav-cv {
+    width: 100%;
+
+    min-height: 42px;
+
+    margin: 4px 0 0;
+
+    padding: 10px 14px;
+
+    border-radius: 11px;
+
+    font-size: 0.8rem;
+  }
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+========================================================= */
+
+@media (max-width: 480px) {
+
+  .nav-inner {
+    gap: 15px;
+  }
+
+  .logo-name {
+    font-size: 1.12rem;
+  }
+
+  .logo-role {
+    font-size: 0.52rem;
+
+    letter-spacing: 0.13em;
+  }
+
+  .burger {
+    width: 41px;
+    height: 41px;
+
+    border-radius: 11px;
+  }
+
+  .nav-links {
+    inset: 67px 12px auto 12px;
+  }
+}
+
+
+/* =========================================================
+   VERY SMALL SCREENS
+========================================================= */
+
+@media (max-width: 350px) {
+
+  .logo-role {
+    display: none;
+  }
+
+  .nav-links {
+    inset: 64px 10px auto 10px;
+  }
+}
+
+
+/* =========================================================
+   REDUCED MOTION
+========================================================= */
+
+@media (prefers-reduced-motion: reduce) {
+
+  .nav,
+  .logo,
+  .nav-links a,
+  .nav-links a::after,
+  .nav-social-icon,
+  .nav-cv,
+  .nav-cv svg,
+  .burger {
+    animation: none;
+
+    transition: none;
+  }
+}

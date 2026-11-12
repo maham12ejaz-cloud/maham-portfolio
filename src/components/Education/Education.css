@@ -1,0 +1,745 @@
+
+/* =========================
+   EDUCATION HEADER
+========================= */
+
+.education-heading {
+  max-width: 720px;
+  margin-bottom: 55px;
+}
+
+.education-label {
+  display: inline-block;
+  margin-bottom: 12px;
+
+  color: #3d5c58;
+
+  font-size: 0.78rem;
+  font-weight: 800;
+
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.education-heading h2 {
+  margin-bottom: 14px;
+}
+
+.education-heading .lead {
+  max-width: 650px;
+  margin: 0;
+
+  color: #3d5c58;
+  line-height: 1.7;
+}
+
+
+/* =========================
+   EDUCATION TIMELINE
+========================= */
+
+.education-timeline {
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+
+  padding: 5px 0;
+}
+
+
+/* =========================
+   TIMELINE ITEM
+========================= */
+
+.education-item {
+  position: relative;
+
+  display: grid;
+
+  grid-template-columns:
+    150px
+    42px
+    minmax(0, 1fr);
+
+  align-items: center;
+
+  gap: 20px;
+
+  transition:
+    opacity 0.8s var(--ease),
+    transform 0.4s var(--ease);
+}
+
+
+/* =========================
+   TIMELINE LINE
+========================= */
+
+.education-line {
+  position: relative;
+
+  display: flex;
+  justify-content: center;
+
+  align-self: stretch;
+
+  min-height: 150px;
+}
+
+.education-line::before {
+  content: '';
+
+  position: absolute;
+
+  top: 0;
+  bottom: -28px;
+
+  width: 2px;
+
+  background:
+    linear-gradient(
+      to bottom,
+      rgba(6, 47, 47, 0.22),
+      rgba(184, 255, 61, 0.45)
+    );
+}
+
+.education-item:last-child .education-line::before {
+  bottom: 50%;
+}
+
+
+/* =========================
+   TIMELINE DOT
+========================= */
+
+.education-dot {
+  position: relative;
+  z-index: 2;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 42px;
+  height: 42px;
+
+  margin-top: 4px;
+
+  border-radius: 50%;
+
+  background: var(--midnight);
+  color: var(--lime);
+
+  box-shadow:
+    0 0 0 6px rgba(184, 255, 61, 0.12),
+    0 0 20px rgba(184, 255, 61, 0.12);
+
+  transition:
+    transform 0.35s var(--ease),
+    box-shadow 0.35s ease;
+}
+
+
+/* =========================
+   EDUCATION DATE
+========================= */
+
+.education-date {
+  align-self: center;
+  text-align: right;
+}
+
+.education-date span {
+  display: inline-block;
+
+  color: #3d5c58;
+
+  font-size: 0.82rem;
+  font-weight: 700;
+
+  line-height: 1.5;
+}
+
+
+/* =========================
+   EDUCATION CARD
+========================= */
+
+.education-card {
+  position: relative;
+
+  background: #ffffff;
+
+  border: none;
+  border-radius: 20px;
+
+  padding: 25px 28px;
+
+  box-shadow:
+    0 8px 25px rgba(6, 47, 47, 0.07);
+
+  transition:
+    transform 0.4s var(--ease),
+    box-shadow 0.4s ease,
+    background 0.4s ease;
+}
+
+
+/* =========================
+   EDUCATION CARD HOVER
+========================= */
+
+.education-item:hover .education-card {
+  transform:
+    translateY(-6px)
+    translateX(4px);
+
+  background: #ffffff;
+
+  box-shadow:
+    0 20px 40px rgba(6, 47, 47, 0.13),
+    0 0 25px rgba(184, 255, 61, 0.20);
+}
+
+.education-item:hover .education-dot {
+  transform: scale(1.08);
+
+  box-shadow:
+    0 0 0 7px rgba(184, 255, 61, 0.14),
+    0 0 28px rgba(184, 255, 61, 0.25);
+}
+
+
+/* =========================
+   EDUCATION CARD TOP
+========================= */
+
+.education-card-top {
+  display: flex;
+
+  align-items: center;
+  justify-content: space-between;
+
+  gap: 15px;
+
+  margin-bottom: 12px;
+}
+
+.education-type {
+  color: #6b756f;
+
+  font-size: 0.72rem;
+  font-weight: 800;
+
+  letter-spacing: 0.1em;
+
+  text-transform: uppercase;
+}
+
+.education-place {
+  color: #3d5c58;
+
+  font-size: 0.78rem;
+  font-weight: 600;
+
+  text-align: right;
+}
+
+
+/* =========================
+   DEGREE
+========================= */
+
+.education-card h3 {
+  margin: 0 0 8px;
+
+  color: var(--ink);
+
+  font-size: clamp(1.25rem, 2vw, 1.55rem);
+
+  line-height: 1.3;
+}
+
+
+/* =========================
+   SCHOOL
+========================= */
+
+.education-school {
+  margin: 0;
+
+  color: #3d5c58;
+
+  font-size: 0.94rem;
+
+  line-height: 1.6;
+}
+
+
+/* =========================
+   EDUCATION RESULT
+========================= */
+
+.education-result {
+  display: inline-flex;
+
+  align-items: center;
+
+  gap: 7px;
+
+  width: fit-content;
+
+  margin-top: 17px;
+
+  padding: 6px 13px;
+
+  border-radius: 999px;
+
+  background: var(--lime);
+
+  color: var(--midnight);
+
+  font-size: 0.82rem;
+
+  transition:
+    transform 0.3s var(--ease),
+    box-shadow 0.3s ease;
+}
+
+.education-result svg {
+  flex-shrink: 0;
+}
+
+.education-item:hover .education-result {
+  transform: translateY(-2px);
+
+  box-shadow:
+    0 6px 16px rgba(184, 255, 61, 0.25);
+}
+
+
+/* =========================================================
+   INTERESTS SECTION
+========================================================= */
+
+.interests-section {
+  display: grid;
+
+  grid-template-columns:
+    minmax(0, 0.85fr)
+    minmax(0, 1.15fr);
+
+  align-items: center;
+
+  gap: 60px;
+
+  margin-top: 100px;
+
+  padding: 0;
+}
+
+
+/* =========================
+   INTERESTS INTRO
+========================= */
+
+.interests-intro {
+  max-width: 430px;
+}
+
+.interests-small-title {
+  display: inline-block;
+
+  margin-bottom: 12px;
+
+  color: #3d5c58;
+
+  font-size: 0.78rem;
+  font-weight: 800;
+
+  letter-spacing: 0.14em;
+
+  text-transform: uppercase;
+}
+
+.interests-intro h2 {
+  margin: 0 0 16px;
+
+  color: var(--ink);
+
+  font-size: clamp(2rem, 4vw, 3rem);
+
+  line-height: 1.05;
+}
+
+.interests-intro p {
+  margin: 0;
+
+  color: #3d5c58;
+
+  font-size: 0.95rem;
+
+  line-height: 1.8;
+}
+
+
+/* =========================================================
+   INTERESTS CARD
+========================================================= */
+
+.interests-card {
+  position: relative;
+
+  padding: 30px;
+
+  background: #ffffff;
+
+  border: none;
+
+  border-radius: 22px;
+
+  box-shadow:
+    0 10px 30px rgba(6, 47, 47, 0.08);
+
+  transition:
+    transform 0.4s var(--ease),
+    box-shadow 0.4s ease;
+}
+
+.interests-card:hover {
+  transform: translateY(-7px);
+
+  box-shadow:
+    0 22px 45px rgba(6, 47, 47, 0.14),
+    0 0 28px rgba(184, 255, 61, 0.20);
+}
+
+
+/* =========================
+   INTEREST CARD HEADER
+========================= */
+
+.interests-card-header {
+  margin-bottom: 22px;
+}
+
+.interests-card-header span {
+  color: var(--midnight);
+
+  font-size: 0.78rem;
+
+  font-weight: 800;
+
+  letter-spacing: 0.12em;
+
+  text-transform: uppercase;
+}
+
+
+/* =========================
+   INTEREST CHIPS
+========================= */
+
+.int-chips {
+  display: flex;
+
+  flex-wrap: wrap;
+
+  gap: 11px;
+}
+
+
+/* =========================
+   INTEREST CHIP
+========================= */
+
+.int {
+  display: inline-flex;
+
+  align-items: center;
+  justify-content: center;
+
+  min-height: 42px;
+
+  padding: 10px 16px;
+
+  border: none;
+
+  border-radius: 999px;
+
+  background: #f4f1e8;
+
+  color: var(--ink);
+
+  font-size: 0.86rem;
+
+  font-weight: 600;
+
+  box-shadow:
+    0 5px 15px rgba(6, 47, 47, 0.05);
+
+  transition:
+    opacity 0.8s var(--ease),
+    transform 0.35s var(--ease),
+    background 0.3s ease,
+    color 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+
+/* =========================
+   INTEREST HOVER
+========================= */
+
+.int.in:hover {
+  transform:
+    translateY(-4px)
+    scale(1.03);
+
+  background: var(--midnight);
+
+  color: var(--lime);
+
+  box-shadow:
+    0 12px 25px rgba(6, 47, 47, 0.15),
+    0 0 20px rgba(184, 255, 61, 0.22);
+}
+
+
+/* =========================================================
+   RESPONSIVE — TABLET
+========================================================= */
+
+@media (max-width: 850px) {
+
+  .education-item {
+    grid-template-columns:
+      110px
+      38px
+      minmax(0, 1fr);
+
+    gap: 15px;
+  }
+
+  .education-dot {
+    width: 38px;
+    height: 38px;
+  }
+
+  .education-card {
+    padding: 22px;
+  }
+
+  .education-place {
+    max-width: 180px;
+  }
+
+  .interests-section {
+    grid-template-columns: 1fr 1.2fr;
+
+    gap: 35px;
+  }
+
+  .interests-card {
+    padding: 25px;
+  }
+}
+
+
+/* =========================================================
+   RESPONSIVE — MOBILE
+========================================================= */
+
+@media (max-width: 680px) {
+
+  .education-heading {
+    margin-bottom: 40px;
+  }
+
+
+  /* Education */
+
+  .education-item {
+    grid-template-columns:
+      30px
+      minmax(0, 1fr);
+
+    gap: 14px;
+
+    align-items: start;
+  }
+
+  .education-line {
+    grid-column: 1;
+
+    grid-row: 1 / span 2;
+
+    min-height: 100%;
+  }
+
+  .education-line::before {
+    top: 42px;
+
+    bottom: -28px;
+  }
+
+  .education-dot {
+    width: 30px;
+    height: 30px;
+
+    margin-top: 2px;
+  }
+
+  .education-dot svg {
+    width: 15px;
+    height: 15px;
+  }
+
+  .education-date {
+    grid-column: 2;
+
+    grid-row: 1;
+
+    text-align: left;
+
+    margin-bottom: -5px;
+  }
+
+  .education-date span {
+    font-size: 0.76rem;
+
+    color: #6b756f;
+  }
+
+  .education-card {
+    grid-column: 2;
+
+    grid-row: 2;
+
+    padding: 21px;
+  }
+
+  .education-card-top {
+    align-items: flex-start;
+
+    flex-direction: column;
+
+    gap: 5px;
+  }
+
+  .education-place {
+    max-width: none;
+
+    text-align: left;
+  }
+
+  .education-card h3 {
+    font-size: 1.25rem;
+  }
+
+
+  /* Interests */
+
+  .interests-section {
+    grid-template-columns: 1fr;
+
+    gap: 30px;
+
+    margin-top: 75px;
+
+    padding: 0;
+  }
+
+  .interests-intro {
+    max-width: 100%;
+  }
+
+  .interests-intro h2 {
+    font-size: 2rem;
+  }
+
+  .interests-card {
+    padding: 24px;
+  }
+
+  .int-chips {
+    gap: 9px;
+  }
+
+  .int {
+    min-height: 40px;
+
+    padding: 9px 15px;
+
+    font-size: 0.82rem;
+  }
+}
+
+
+/* =========================================================
+   RESPONSIVE — SMALL MOBILE
+========================================================= */
+
+@media (max-width: 480px) {
+
+  .education-card {
+    padding: 18px;
+  }
+
+  .education-card h3 {
+    font-size: 1.15rem;
+  }
+
+  .education-school {
+    font-size: 0.88rem;
+  }
+
+  .education-result {
+    font-size: 0.76rem;
+
+    padding: 5px 11px;
+  }
+
+
+  /* Interests */
+
+  .interests-section {
+    margin-top: 65px;
+
+    gap: 25px;
+  }
+
+  .interests-card {
+    padding: 20px;
+  }
+
+  .int {
+    padding: 8px 13px;
+
+    font-size: 0.78rem;
+  }
+
+  .int-chips {
+    gap: 8px;
+  }
+}
+
+
+/* =========================================================
+   REDUCED MOTION
+========================================================= */
+
+@media (prefers-reduced-motion: reduce) {
+
+  .education-item,
+  .education-card,
+  .education-dot,
+  .education-result,
+  .interests-card,
+  .int {
+    transition: none;
+  }
+}
